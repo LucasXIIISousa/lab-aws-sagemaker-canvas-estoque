@@ -1,47 +1,18 @@
 # 📊 Previsão de Estoque Inteligente na AWS com [SageMaker Canvas](https://aws.amazon.com/pt/sagemaker/canvas/)
 
-Bem-vindo ao desafio de projeto "Previsão de Estoque Inteligente na AWS com SageMaker Canvas. Neste Lab DIO, você aprenderá a usar o SageMaker Canvas para criar previsões de estoque baseadas em Machine Learning (ML). Siga os passos abaixo para completar o desafio!
+Avg.wQL (0.379):
 
-## 📋 Pré-requisitos
+Significado: Este valor representa a média ponderada da perda quantílica. Um valor de 0.379 sugere que, em média, a discrepância entre os valores previstos e os valores reais é relativamente baixa. Isso indica que o modelo tem um bom desempenho em prever os quantis dos dados.
+MAPE (0.428):
 
-Antes de começar, certifique-se de ter uma conta na AWS. Se precisar de ajuda para criar sua conta, confira nosso repositório [AWS Cloud Quickstart](https://github.com/digitalinnovationone/aws-cloud-quickstart).
+Significado: O MAPE de 0.428 indica que o erro percentual médio absoluto das previsões do modelo é de aproximadamente 42.8%. Em outras palavras, em média, as previsões do modelo estão desviando cerca de 42.8% dos valores reais. Esse valor pode ser considerado alto dependendo do contexto e da aplicação.
+WAPE (0.539):
 
+Significado: O WAPE de 0.539 indica que, quando ponderado pela importância de cada ponto de dados, o erro absoluto médio é de aproximadamente 53.9% do valor real. Assim como o MAPE, um valor alto de WAPE sugere que há uma discrepância significativa entre as previsões e os valores reais.
+RMSE (25.872):
 
-## 🎯 Objetivos Deste Desafio de Projeto (Lab)
+Significado: O RMSE de 25.872 indica que a raiz do erro quadrático médio das previsões é 25.872. Esse valor proporciona uma medida da magnitude dos erros das previsões em unidades da variável predita. Um RMSE alto pode indicar a presença de grandes desvios entre os valores previstos e os valores reais.
+MASE (0.569):
 
-![image](https://github.com/digitalinnovationone/lab-aws-sagemaker-canvas-estoque/assets/730492/72f5c21f-5562-491e-aa42-2885a3184650)
-
-- Dê um fork neste projeto e reescreva este `README.md`. Sinta-se à vontade para detalhar todo o processo de criação do seu Modelo de ML para uma "Previsão de Estoque Inteligente".
-- Para isso, siga o [passo a passo] descrito a seguir e evolua as suas habilidades em ML no-code com o Amazon SageMaker Canvas.
-- Ao concluir, envie a URL do seu repositório com a solução na plataforma da DIO.
-
-
-## 🚀 Passo a Passo
-
-### 1. Selecionar Dataset
-
--   Navegue até a pasta `datasets` deste repositório. Esta pasta contém os datasets que você poderá escolher para treinar e testar seu modelo de ML. Sinta-se à vontade para gerar/enriquecer seus próprios datasets, quanto mais você se engajar, mais relevante esse projeto será em seu portfólio.
--   Escolha o dataset que você usará para treinar seu modelo de previsão de estoque.
--   Faça o upload do dataset no SageMaker Canvas.
-
-### 2. Construir/Treinar
-
--   No SageMaker Canvas, importe o dataset que você selecionou.
--   Configure as variáveis de entrada e saída de acordo com os dados.
--   Inicie o treinamento do modelo. Isso pode levar algum tempo, dependendo do tamanho do dataset.
-
-### 3. Analisar
-
--   Após o treinamento, examine as métricas de performance do modelo.
--   Verifique as principais características que influenciam as previsões.
--   Faça ajustes no modelo se necessário e re-treine até obter um desempenho satisfatório.
-
-### 4. Prever
-
--   Use o modelo treinado para fazer previsões de estoque.
--   Exporte os resultados e analise as previsões geradas.
--   Documente suas conclusões e qualquer insight obtido a partir das previsões.
-
-## 🤔 Dúvidas?
-
-Esperamos que esta experiência tenha sido enriquecedora e que você tenha aprendido mais sobre Machine Learning aplicado a problemas reais. Se tiver alguma dúvida, não hesite em abrir uma issue neste repositório ou entrar em contato com a equipe da DIO.
+Significado: O MASE de 0.569 sugere que o modelo preditivo está se saindo melhor do que um modelo de referência (por exemplo, uma média histórica), já que o valor é menor que 1. Um MASE de 0.569 significa que o erro absoluto médio do modelo preditivo é aproximadamente 56.9% do erro absoluto médio do modelo de referência.
+Resumindo, os valores fornecem uma visão sobre a performance do modelo, destacando tanto seus pontos fortes quanto suas áreas de melhoria. Um Avg.wQL relativamente baixo e um MASE menor que 1 são indicadores positivos, enquanto os valores de MAPE e WAPE sugerem que há espaço para melhorar a precisão percentual das previsões.
